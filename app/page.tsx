@@ -3,7 +3,7 @@ import Dither from "@/components/Dither";
 import HeroSection from "@/components/HeroSection";
 import LinksGrid from "@/components/LinksGrid";
 import LiveStats from "@/components/LiveStats";
-import TechStack from "@/components/TechStack";
+import ScrollVelocity from "@/components/ScrollVelocity";
 
 export default function Home() {
   return (
@@ -16,13 +16,26 @@ export default function Home() {
       <TargetCursor />
 
       {/* Main Content */}
-      <div className="w-full min-h-screen pt-10 bg-black/70 backdrop-blur-xl">
+      <div className="w-full min-h-screen pt-10 bg-black/40 backdrop-blur-md">
         <div className="max-w-3xl mx-auto">
           <HeroSection />
-          <LinksGrid />
-          <LiveStats />
+          <div className="font-bruno-ace-sc">
+            <LinksGrid />
+            <LiveStats />
+          </div>
         </div>
-        <TechStack />
+        
+        {/* Full Width Scroll Velocity */}
+        <div className="w-full">
+          <ScrollVelocity
+            texts={["SRIHASRC", "PERSONALHUB"]}
+            velocity={50}
+            damping={80}
+            stiffness={300}
+            numCopies={8}
+            className="font-audiowide text-[#d6d6d6a4]/50"
+          />
+        </div>
       </div>
     </div>
   );

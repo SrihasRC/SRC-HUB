@@ -43,7 +43,7 @@ export default function LinksGrid() {
               className="group relative flex items-center justify-center gap-2 px-4 py-3 border border-white/10 rounded-lg hover:border-white/30 hover:bg-white/5 transition-all duration-300 cursor-target cursor-none"
             >
               <Icon className="w-4 h-4 text-gray-400 group-hover:text-white transition-colors" />
-              <span className="font-space-grotesk text-sm text-gray-400 group-hover:text-white transition-colors">
+              <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
                 {link.label}
               </span>
             </a>

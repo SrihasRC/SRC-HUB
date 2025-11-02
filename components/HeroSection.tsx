@@ -5,7 +5,7 @@ export default function HeroSection() {
     <div className="relative z-10">
       <ShinyText
         text="SRIHAS REDDY CHALLA"
-        className="font-figtree text-4xl md:text-4xl lg:text-5xl font-black tracking-[0.6rem] text-center px-8 leading-none"
+        className="font-audiowide text-4xl md:text-4xl lg:text-5xl font-black tracking-[0.6rem] text-center px-8 leading-none"
         speed={2}
         disabled={false}
       />

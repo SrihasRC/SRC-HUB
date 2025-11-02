@@ -131,11 +131,11 @@ export default function LiveStats() {
           <div className="flex items-center gap-3">
             <Clock className="w-5 h-5 text-blue-400" />
             <div className="flex-1">
-              <p className="font-space-grotesk text-xs text-gray-500 mb-1">Local Time</p>
-              <p className="font-space-grotesk text-sm text-gray-300 font-mono">{currentTime}</p>
+              <p className="text-xs text-gray-500 mb-1">Local Time</p>
+              <p className="text-sm text-gray-300">{currentTime}</p>
             </div>
             <div className="flex-1 text-right">
-              <p className="font-space-grotesk text-xs text-gray-400 transition-all duration-500">
+              <p className="text-xs text-gray-400 transition-all duration-500">
                 {currentStatus}
               </p>
             </div>
@@ -153,9 +153,9 @@ export default function LiveStats() {
               >
                 <div className="flex items-center gap-2 mb-2">
                   <Icon className={`w-4 h-4 ${stat.color}`} />
-                  <span className="font-space-grotesk text-xs text-gray-500">{stat.label}</span>
+                  <span className="text-xs text-gray-500">{stat.label}</span>
                 </div>
-                <p className="font-space-grotesk text-lg font-semibold text-gray-200">{stat.value}</p>
+                <p className="text-lg font-semibold text-gray-200">{stat.value}</p>
               </div>
             );
           })}
