@@ -31,7 +31,7 @@ const links = [
 export default function LinksGrid() {
   return (
     <div className="mt-16 px-8">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-2xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-2xl">
         {links.map((link) => {
           const Icon = link.icon;
           return (

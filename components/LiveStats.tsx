@@ -125,7 +125,7 @@ export default function LiveStats() {
 
   return (
     <div className="mt-12 px-6 pb-15">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl">
         {/* Local Time + Status */}
         <div className="mb-6 p-4 border border-white/10 rounded-lg bg-white/5 backdrop-blur-sm">
           <div className="flex items-center gap-3">
