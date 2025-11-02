@@ -35,7 +35,7 @@ const TextCursor: React.FC<TextCursorProps> = ({
 }) => {
   const [trail, setTrail] = useState<TrailItem[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
-  const lastMoveTimeRef = useRef<number>(Date.now());
+  const lastMoveTimeRef = useRef<number>(0);
   const idCounter = useRef<number>(0);
 
   const handleMouseMove = (e: MouseEvent) => {
@@ -96,11 +96,12 @@ const TextCursor: React.FC<TextCursorProps> = ({
   };
 
   useEffect(() => {
+    lastMoveTimeRef.current = Date.now();
     const container = containerRef.current;
     if (!container) return;
     container.addEventListener('mousemove', handleMouseMove);
     return () => container.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
