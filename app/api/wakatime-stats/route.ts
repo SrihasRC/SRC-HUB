@@ -43,7 +43,6 @@ export async function GET() {
     }
 
     const data = await res.json();
-    console.log('WakaTime response:', JSON.stringify(data, null, 2));
     
     const totalSeconds = data.data?.total_seconds || 0;
 
