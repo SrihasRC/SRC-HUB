@@ -168,19 +168,19 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
 
         const { borderWidth, cornerSize, parallaxStrength } = constants;
 
-        let tlOffset = {
+        const tlOffset = {
           x: rect.left - cursorCenterX - borderWidth,
           y: rect.top - cursorCenterY - borderWidth
         };
-        let trOffset = {
+        const trOffset = {
           x: rect.right - cursorCenterX + borderWidth - cornerSize,
           y: rect.top - cursorCenterY - borderWidth
         };
-        let brOffset = {
+        const brOffset = {
           x: rect.right - cursorCenterX + borderWidth - cornerSize,
           y: rect.bottom - cursorCenterY + borderWidth - cornerSize
         };
-        let blOffset = {
+        const blOffset = {
           x: rect.left - cursorCenterX - borderWidth,
           y: rect.bottom - cursorCenterY + borderWidth - cornerSize
         };
@@ -329,7 +329,7 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-0 h-0 pointer-events-none z-[9999] mix-blend-difference transform -translate-x-1/2 -translate-y-1/2"
+      className="fixed top-0 left-0 w-0 h-0 pointer-events-none z-9999 mix-blend-difference transform -translate-x-1/2 -translate-y-1/2"
       style={{ willChange: 'transform' }}
     >
       <div

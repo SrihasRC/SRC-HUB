@@ -16,7 +16,7 @@ export default function Home() {
       <TargetCursor />
 
       {/* Main Content */}
-      <div className="w-full min-h-screen pt-10 bg-black/40 backdrop-blur-md">
+      <div className="w-full min-h-screen pt-10 bg-black/40 backdrop-blur-xl">
         <div className="max-w-3xl mx-auto">
           <HeroSection />
           <div className="font-bruno-ace-sc">
