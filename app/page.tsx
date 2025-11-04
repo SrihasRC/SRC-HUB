@@ -10,7 +10,7 @@ export default function Home() {
     <div className="relative overflow-x-hidden min-h-screen ">
       {/* Dithered Background */}
       <div className="w-full h-screen fixed inset-0 pointer-events-none -z-10">
-        <Dither enableMouseInteraction={false} />
+        {/* <Dither enableMouseInteraction={false} /> */}
       </div>
 
       <TargetCursor />
